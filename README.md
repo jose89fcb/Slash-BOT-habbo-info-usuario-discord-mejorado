@@ -8,3 +8,6 @@ Para usar el bot es de la siguiente manera:
 <br>
 
 <img src="https://i.imgur.com/ISCYy3B.png">
+<br>
+<br>
+<img src="https://i.imgur.com/4068EfD.png">
