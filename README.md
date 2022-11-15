@@ -1,3 +1,7 @@
+Nuevo: https://github.com/jose89fcb/Slash-BOT-habbo-info-usuario-discord-mejorado/blob/main/Slash%20Habbo.py
+<br>
+<br>
+
 Necesitas instalar python 3.7: https://www.python.org/downloads/release/python-370/
 Como usar la configuracion:
 ABRIR EL ARCHIVO configuracion.json
