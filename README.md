@@ -10,4 +10,4 @@ Para usar el bot es de la siguiente manera:
 <img src="https://i.imgur.com/ISCYy3B.png">
 <br>
 <br>
-<img src="https://i.imgur.com/4068EfD.png">
+<img src="https://i.imgur.com/skrv3JA.png">
