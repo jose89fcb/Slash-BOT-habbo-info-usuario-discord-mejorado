@@ -15,6 +15,4 @@ Para usar el bot es de la siguiente manera:
 <br>
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
-<br>
-$\color[rgb]{1,0,1} hello$
 
