@@ -1,4 +1,4 @@
-<font color="green">Nuevo: </font> https://github.com/jose89fcb/Slash-BOT-habbo-info-usuario-discord-mejorado/blob/main/Slash%20Habbo.py
+Nuevo: https://github.com/jose89fcb/Slash-BOT-habbo-info-usuario-discord-mejorado/blob/main/Slash%20Habbo.py
 <br>
 <br>
 
@@ -16,4 +16,4 @@ Para usar el bot es de la siguiente manera:
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
 <br>
-<span style="color:orange;">Word up</span>
+
