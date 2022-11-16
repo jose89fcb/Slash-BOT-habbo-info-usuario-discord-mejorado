@@ -15,3 +15,5 @@ Para usar el bot es de la siguiente manera:
 <br>
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
+<br>
+![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
