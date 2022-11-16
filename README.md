@@ -16,10 +16,16 @@ Para usar el bot es de la siguiente manera:
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
 <br>
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+```json
+   // codigo para colorear
 ```
+```html
+   // codigo para colorear
+```
+```js
+   // codigo para colorear
+```
+```css
+   // codigo para colorear
+```
+// etc.
