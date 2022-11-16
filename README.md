@@ -17,15 +17,6 @@ Para usar el bot es de la siguiente manera:
 <img src="https://i.imgur.com/skrv3JA.png">
 <br>
 ```json
-   // codigo para colorear
+   codigo para colorear
 ```
-```html
-   // codigo para colorear
-```
-```js
-   // codigo para colorear
-```
-```css
-   // codigo para colorear
-```
-// etc.
+
