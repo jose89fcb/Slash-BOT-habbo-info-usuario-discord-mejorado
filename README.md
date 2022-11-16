@@ -16,7 +16,4 @@ Para usar el bot es de la siguiente manera:
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
 <br>
-```json
-   codigo para colorear
-```
-
+<span style="color:orange;">Word up</span>
