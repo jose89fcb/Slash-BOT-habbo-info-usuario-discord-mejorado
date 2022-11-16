@@ -1,4 +1,4 @@
-Nuevo: https://github.com/jose89fcb/Slash-BOT-habbo-info-usuario-discord-mejorado/blob/main/Slash%20Habbo.py
+<font color="green">Nuevo: </font> https://github.com/jose89fcb/Slash-BOT-habbo-info-usuario-discord-mejorado/blob/main/Slash%20Habbo.py
 <br>
 <br>
 
