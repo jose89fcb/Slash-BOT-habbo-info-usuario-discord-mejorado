@@ -187,39 +187,7 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
     except KeyError:
       await ctx.send("el keko no existe!") 
 
-    try:
-
-     fecha = isoparse(response.json()['lastAccessTime']).timestamp()
-    except TypeError:
-        fecha="" 
-    except KeyError:
-        fecha=""    
-
-
-
-    timestamp = fecha
-    try:
-
-     date1 =  parser.parse(datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S")) 
-    except TypeError:
-        date1=""
-    date2 = datetime.now()
-    try:
-
-     r = relativedelta.relativedelta(date2, date1)
-    except TypeError:
-        r="" 
-    try:
-
-     r.months + (12*r.years)
-    except AttributeError:
-        r=""
-
-    try:
-
-     tiempotrans = f"{r.years} Años {r.days} Días {r.hours} Horas {r.months} Meses {r.minutes} Minutos {r.seconds} Segundos"  
-    except AttributeError:
-        tiempotrans="❌"
+    
      
     try:
 
@@ -293,7 +261,7 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
       ultmimoacesso = datetime.fromtimestamp(timestamp).strftime("%A, %#d de %B del %Y %H:%M:%S")
      except TypeError:
-        ultmimoacesso="" 
+        ultmimoacesso="No muestra" 
     
 
 
@@ -351,6 +319,7 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
      perfil="Muestra su perfil"
      fechaAccesso="Lo tiene oculto❌"
      horaAccesso=""
+     tiempotrans="No muestra ❌"
    
    
     
@@ -366,7 +335,39 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
 
     
-   
+    try:
+
+     fecha = isoparse(response.json()['lastAccessTime']).timestamp()
+    except TypeError:
+        fecha="" 
+    except KeyError:
+        fecha=""    
+
+
+
+    timestamp = fecha
+    try:
+
+     date1 =  parser.parse(datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S")) 
+    except TypeError:
+        date1=" "
+    date2 = datetime.now()
+    try:
+
+     r = relativedelta.relativedelta(date2, date1)
+    except TypeError:
+        r=" " 
+    try:
+
+     r.months + (12*r.years)
+    except AttributeError:
+        r=" "
+
+    try:
+
+     tiempotrans = f"{r.years} Años {r.days} Días {r.hours} Horas {r.months} Meses {r.minutes} Minutos {r.seconds} Segundos"  
+    except AttributeError:
+        tiempotrans="No muestra!❌"
     
     
 
