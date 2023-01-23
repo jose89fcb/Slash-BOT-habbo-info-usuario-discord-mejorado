@@ -41,7 +41,7 @@ bot = commands.Bot(command_prefix="!") #Añadir un prefijo si gustas
 bot.remove_command("help") #Borramos el comando !help por defecto
 
  
-with open('configuracion.json') as f: 
+with open('config.json') as f: 
     config = json.load(f) 
 
 
@@ -386,6 +386,17 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
         embed.set_author(name="Habbo [ES]", icon_url="https://i.imgur.com/0UDuO3n.png")
         embed.set_footer(text="habbo[ES]", icon_url="https://i.imgur.com/6ePWlHz.png")
         await ctx.send(embed=embed)
+       
+
+        embed=discord.Embed(title=f"ID del keko {Habbokeko}")
+        embed.add_field(name=f"ID => {id}", value="\n\nAquí se guardaran las ID's de los usuarios de habbo Hotel\n\n¿Para qué sirve?\n\nPor si él usuario cambia de nombre con el ID podras visualizar el nombre", inline=False)
+        embed.set_thumbnail(url="https://www.habbo.es/habbo-imaging/avatarimage?user=" + Habbokeko + "&&headonly=1&size=b&gesture=sml&head_direction=4&action=std")
+        await ctx.author.send(embed=embed)
+
+
+        await ctx.channel.send("Te acabo de enviar un mensaje privado")
+    except discord.errors.Forbidden:
+        await ctx.channel.send("No pudimos enviarte el mensaje privado, => click en ajustes de usuario => privacidad y seguridad => permitir mensajes directos...")
     except UnboundLocalError:
         Habbokeko=""
     
@@ -458,6 +469,7 @@ async def comandos(ctx):
   embed = discord.Embed(title="COMANDOS", description="Aquí están todos los comandos para poder generar los usuarios de cada hotel\n\n!HabboES ejemplo\n!HabboCOM ejemplo\n!HabboDE ejemplo\n!HabboFR ejemplo\n!HabboFI ejemplo\n!HabboIT ejemplo\n!HabboTR ejemplo\n!HabboNL ejemplo\n!HabboBR ejemplo\n\n\nEscribe !cerrar para poder cerrar el bot")
   embed.set_author(name="información", icon_url="https://i.imgur.com/grmS8RH.png")
   await ctx.send(embed=embed)  
+  
   
 
 
