@@ -29,7 +29,7 @@ bot = commands.Bot(command_prefix="!") #Añadir un prefijo si gustas
 bot.remove_command("help") #Borramos el comando !help por defecto
 
  
-with open('configuracion.json') as f: 
+with open('config.json') as f: 
     config = json.load(f) 
 
 
