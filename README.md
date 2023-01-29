@@ -18,4 +18,6 @@ Para usar el bot es de la siguiente manera:
 <br>
 Video de instalación:
 <br>
-[![Alt text](https://img.youtube.com/vi/dd7kWCvZtv0/0.jpg)](https://www.youtube.com/watch?v=dd7kWCvZtv0)
+[![Video: ](https://img.youtube.com/vi/dd7kWCvZtv0/0.jpg)](https://www.youtube.com/watch?v=dd7kWCvZtv0)
+
+
