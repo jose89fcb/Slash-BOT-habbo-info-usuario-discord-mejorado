@@ -15,4 +15,7 @@ Para usar el bot es de la siguiente manera:
 <br>
 <br>
 <img src="https://i.imgur.com/skrv3JA.png">
-
+<br>
+Video de instalación:
+<br>
+https://www.youtube.com/watch?v=dd7kWCvZtv0
