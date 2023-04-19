@@ -29,7 +29,7 @@ bot = commands.Bot(command_prefix="!") #Añadir un prefijo si gustas
 bot.remove_command("help") #Borramos el comando !help por defecto
 
  
-with open('config.json') as f: 
+with open('configuracion.json') as f: 
     config = json.load(f) 
 
 
@@ -191,8 +191,8 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
     try:
     
-     estado = response.json()["online"]
-     estado = (str(estado)).replace("True","Conectado✅").replace("False","desconectado❌")
+     #estado = response.json()["online"]
+     #estado = (str(estado)).replace("True","Conectado✅").replace("False","desconectado❌")
     
 
      totalxp = response.json()['totalExperience']
@@ -251,7 +251,7 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
     except KeyError:
 
-     estado ="desconectado❌"
+     #estado ="desconectado❌"
      totalxp="No muestra Xp❌"
      NivelActual="No muestra el nivel❌"
      GemasHabbo="no muestra sus gemas❌"
@@ -299,7 +299,16 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
     
     
 
+    data = response.json()
+    estado = data["online"]
+    es = {
+       "False":"Desconectad@ ❌",
+       "True":"En línea ✅"
+       
 
+
+    }
+    estado = es[str(estado)]
     
 
     try:

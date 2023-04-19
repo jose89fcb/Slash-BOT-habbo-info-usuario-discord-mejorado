@@ -230,8 +230,8 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
     try:
     
-     estado = response.json()["online"]
-     estado = (str(estado)).replace("True","Conectado✅").replace("False","desconectado❌")
+     #estado = response.json()["online"]
+     #estado = (str(estado)).replace("True","Conectado✅").replace("False","desconectado❌")
     
 
      totalxp = response.json()['totalExperience']
@@ -289,7 +289,7 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
     except KeyError:
 
-     estado ="desconectado❌"
+     #estado ="desconectado❌"
      totalxp="No muestra Xp❌"
      NivelActual="No muestra el nivel❌"
      GemasHabbo="no muestra sus gemas❌"
@@ -374,7 +374,16 @@ async def _habboinfo(ctx:SlashContext, keko:str, hotel:str):
 
     
 
+    data = response.json()
+    estado = data["online"]
+    es = {
+       "False":"Desconectad@ ❌",
+       "True":"En línea ✅"
+       
 
+
+    }
+    estado = es[str(estado)]
 
     try:
         embed = discord.Embed(title="\n\n\nEstá es la info de 🡺 " + Habbokeko, description=f"•ID🡺 " + id + "\n\n•Estado🡺 " +estado + "\n\n•Total XP🡺 " + totalxp + "\n\n•Misión 🡺 " + mision  + "\n\n•Nivel actual🡺 " +  NivelActual + "\n\n•Gemas Obtenidas (Estrellas)🡺 " + GemasHabbo + "\n\n•Siguiente Nivel🡺 " + siguientenivel + "\n\n•Hora Miembro desde🡺 " +dt_object +"\n\n•Hora último accesso🡺 "  +ultmimoacesso +" \n\n•Perfil🡺 " +perfil + "\n\n•Grupos Totales🡺 " + grupos + "\n\n•Salas Totales🡺 " + salas + "\n\n•Fotos Totales🡺 " + fotos +"\n\n•Total Amigos🡺 " + amigos + "\n\n•Placas Totales🡺 " +placas + " \n\n•Tiempo de último acesso🡺 "   +tiempotrans+ "\n\n•Tiempo Miembro desde🡺 "+tiempo+ "\n\n[Visita el perfil de " + Habbokeko + "](https://habbo.es/profile/"+ Habbokeko + ")"  "\n\n[twitter oficial](https://twitter.com/ESHabbo) | " "[facebook oficial](https://www.facebook.com/Habbo) | " "[instagram oficial](https://www.instagram.com/habboofficial)", timestamp=datetime.utcnow(), color=discord.Colour.random())
